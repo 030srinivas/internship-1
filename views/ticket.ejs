@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    /* ====================================================navbar======================================== */
+.container{
+    margin-bottom:10px;
+    margin-top:0px;
+}
+#logo{
+    width:4%;
+    border-radius:50%;
+}
+#dropdown{
+ margin-right:20px;
+ margin-top: -25px;
+
+}
+.container-fluid{
+    background-color:black;
+    height:80px;
+    margin-top:0px;
+}
+#col{
+    color: white;
+    padding-left:10px;
+    margin-left:20px;
+}
+#img2{
+    width:60px;
+    height:40px;
+    margin-left:50px;
+    padding-right:15%;
+    padding-top:0px;
+    
+}
+/* ==================================================main====================================== */
+
+.container{
+    border: 0.1px solid white;
+    margin-top:1%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color:azure;
+    border-radius:8px;
+    padding-top:20px;
+    margin-left:4%;
+    margin-right:-10%;
+}
+.container1{
+    border:0.1px solid white;
+    margin:10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color:rgb(233, 226, 226);
+    margin-left:10%;
+    margin-right:10%;
+    border-radius:8px;
+}
+.book{
+    display: flex;
+}
+.header1,.header2{
+    display: flex;
+    margin:1%;
+}
+#ob2{
+   margin-left:120px;
+}
+#ob3{
+   margin-left:400px;
+}
+#id1{
+ margin-left:4.5%;
+}
+#side-bar{
+    margin-left:50%;
+    
+}
+h6{
+    padding-right:5px; 
+}
+
+#text-area{
+    margin:2.5%;
+    padding-left:40px;
+    width:95%;
+}
+#problem{
+    margin:1.5%;
+    margin-bottom:0%;
+}
+.doc{
+    display: flex;
+    margin:1.5%;   
+}
+.doc1{
+    display: flex;
+}
+.doc2{
+    display: flex;
+    margin-left:29%;
+    margin-top:1.5%;
+}
+#date{
+    height:60%;
+    margin-right:60%;
+    margin-left:4%;
+}
+#date1{
+    margin-left:-60%;
+    margin-right:5%; 
+ }
+.submit{
+    margin-left:50%;
+    margin-bottom:4%;
+}
+#container4{
+    margin-right:10px;
+}
+/* ===========================================footer========================================== */
+.main{
+    display: flex;
+    background-color:aqua;
+    color:black;
+
+}
+.container2{
+    width:30%
+}
+p,h1{
+    width:50%;
+    margin-left:40%;
+}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.1d7TQI67pwfr0F5jqTgD1AHaGw&pid=Api&P=0&h=180" alt="" id="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="col" aria-current="page" href="#">Home</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+                <li class="nav-item dropdown" id="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://thumbs.dreamstime.com/b/profile-icon-black-background-graphic-web-design-modern-simple-vector-sign-internet-concept-trendy-symbol-profile-138113128.jpg" alt="" id="img2">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Name</a></li>
+                        <li><a class="dropdown-item" href="#">Id</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">problem</a></li>
+                    </ul>
+                </li>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container4 mx-2 d-inline-flex mt-450" id="conatiner4">
+        <div class="dropdown shadow p-1 mb-5 bg-body-tertiary rounded w-25 h-100">
+        <button> <a href="history.ejs"> View History </a></button>
+      </div>
+
+<form action="ticket", method="POST">
+    <div class="container">
+        <div class="container1">
+            <div class="book">
+                <div class="header1">
+                    <h6 id="ob1">Ticket No</h6>
+                    <!-- {{!-- <input type="type" id="Ticket-No" placeholder="Ticket No" name="tic"> --}} -->
+                    <input type="text" id="Ticket-No" placeholder="Ticket No" name="tic">
+                </div>
+                <div class="header1">
+                    <h6 id="ob2">Name</h6>
+                    <input type="name" id="name" placeholder="Name" name="naam">
+                </div>
+            </div>
+                <div class="book">
+                <div class="header2">
+                    <h6 id="ob3">Id</h6>
+                    <input type="id" placeholder="Id" id="id1" name="id">
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <h4 id="problem">raise an issue:</h4>
+            <textarea  id="text-area" cols="130" rows="10" name="raise"></textarea>
+            <div class="doc1">
+                <div class="doc">
+                    <h6>Documents</h6>
+                    <input type="file" id="" name="doc">
+                </div>
+                <div class="doc2">
+                    <h6 id="date1">Date</h6>
+                    <input type="date"  id="date" name="date">
+                </div>
+
+            </div>
+            <div class="d-grid gap-2">
+               <input type="submit" class="btnRegister bg-primary" value="submit">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </form>
+    <footer>
+        <div class="main">
+            
+            <div class="container2">
+                <h1>About Us</h1>
+                <p>We are team of successful product builders. We work to serve all time zones and have built successful
+                    clone scripts which are readily customizable and scalable.  </p>
+            </div>
+            <div class="container2">
+                <h1>Question Us</h1>
+                <p>Documentation <br>Knowledge base <br>Contact Us <br>Help desk</p>
+            </div>
+            <div class="container2">
+                <h1>Contact Us</h1>
+                <p>Novel Tech Park, <br>3rd Floor #46/4, Kudlu Gate, <br>Hosur Rd, HSR Extension, <br>Bengaluru
+                    Karnataka 560068 <br>contact@rentcubo.com<br>+91-845 877 7111
+                    
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+        <script src="sample.js"></script>
+
+</body>
+
+</html>
